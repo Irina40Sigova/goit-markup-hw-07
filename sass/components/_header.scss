@@ -1,0 +1,102 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--primary-white-color);
+}
+.link {
+    position: relative;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation__logo {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.logo__accent {
+    color: var(--accent-text-color);
+}
+.menu,
+.connect__list {
+    display: flex;
+    gap: 50px;
+}
+.menu__link {
+    padding: 32px 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--timing-function);
+&:hover,
+&:focus {
+    color: var(--accent-text-color);
+        }
+}
+
+.menu__link--current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-text-color);
+    bottom: 0;
+    left: 0;
+    margin: -1px;
+.menu__link.link & {
+     color: var(--accent-text-color);
+        }
+}
+.header__connect{
+    margin-left: auto;
+}
+.connect__nav {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    margin-right: auto;
+    transition: color 250ms var(--timing-function);
+&:hover,
+&:focus {
+    color: var(--accent-text-color);
+        }
+}
+
+.connect__icon {
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    fill: var(--secondary-text-color);
+    transition: fill 250ms var(--timing-function);
+&:hover,
+&:focus {
+    fill: var(--accent-text-color);
+       }
+.connect__nav:hover &,
+.connect__nav:focus & {
+    fill: var(--accent-text-color);
+    color: var(--accent-text-color);
+        }
+}
+
+
+
+
