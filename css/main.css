@@ -172,7 +172,7 @@ input {
   color: var(--accent-text-color);
 }
 
-.hero__container {
+.hero__image {
   padding: 200px 0;
   background-color: #2f303a;
   max-width: 1600px;
